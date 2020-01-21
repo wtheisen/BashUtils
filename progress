@@ -1,0 +1,5 @@
+out "$(./concat 'X' "$ITERCURR")$(./concat '.' $((ITERMAX - ITERCURR))) | ($ITERCURR / $ITERMAX)"
+
+function out () {
+    echo "$1" 1>&2
+}
